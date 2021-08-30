@@ -1,0 +1,11 @@
+[package]
+name = "tracing-min-example"
+version = "0.1.0"
+edition = "2018"
+
+[dependencies]
+tracing = {git = "https://github.com/tokio-rs/tracing" }
+tracing-subscriber = {git = "https://github.com/tokio-rs/tracing" }
+tracing-opentelemetry = {git = "https://github.com/tokio-rs/tracing" }
+opentelemetry = { version = "0.16", features = ["trace"] }
+opentelemetry-jaeger = { version = "0.15", features = ["reqwest_collector_client"]}
